@@ -18,3 +18,15 @@ Alloy.Collections.cars.reset([{
 	"make" : "Nissan",
 	"model" : "Altima"
 }]);
+
+//wedgit
+var toggleBtnWidget = Alloy.createWidget("Wedgit", null, {
+	"defaultState": "on",
+	"id" : "toggleBtnWidget"
+});
+
+//wedgit view
+$.mainWindow.add(toggleBtnWidget.getView());
+
+//window
+$.mainWindow.open();
